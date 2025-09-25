@@ -1,0 +1,29 @@
+.landing-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Tablet (≤ 768px) */
+@media (max-width: 768px) {
+  .landing-page {
+    padding: 0 1.5rem; /* add breathing room on smaller screens */
+  }
+}
+
+/* Mobile (≤ 480px) */
+@media (max-width: 480px) {
+  .landing-page {
+    padding: 0 1rem;
+  }
+
+  .landing-page h1 {
+    font-size: 2rem; /* shrink large titles */
+    line-height: 1.2;
+  }
+
+  .landing-page p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}

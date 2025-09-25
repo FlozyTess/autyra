@@ -1,0 +1,73 @@
+/* Base navbar styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar__logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+/* Links for large screens */
+.navbar__links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.navbar__links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.navbar__links a:hover {
+  color: #d1d1ff;
+}
+
+/* Burger button (hidden on large screens) */
+.navbar__toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  gap: 4px;
+}
+
+.navbar__toggle span {
+  width: 24px;
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbar__links {
+    display: none; /* hidden by default on small screens */
+    flex-direction: column;
+    position: absolute;
+    top: 64px; /* just below navbar */
+    right: 1rem;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 1rem;
+    border-radius: 8px;
+  }
+
+  .navbar__links.show {
+    display: flex; /* shown when burger is toggled */
+  }
+
+  .navbar__toggle {
+    display: flex;
+  }
+}

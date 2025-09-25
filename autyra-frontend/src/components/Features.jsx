@@ -19,14 +19,14 @@ export default function Features() {
 
   return (
     <section className="features">
-      <h2>Key Features</h2>
+      <h2 className="features-title">Key Features</h2>
       <div className="features-grid">
         {features.map((f, i) => (
-          <div key={i} className="feature-card">
+          <article key={i} className="feature-card">
             <div className="feature-icon">{f.icon}</div>
             <h3>{f.title}</h3>
             <p>{f.description}</p>
-          </div>
+          </article>
         ))}
       </div>
     </section>

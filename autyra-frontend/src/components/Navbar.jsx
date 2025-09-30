@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Navbar.css";
+import "./Navbar.css";
 
 function Navbar() {
   const links = ["Home", "Sign", "Convert", "Dashboard"];

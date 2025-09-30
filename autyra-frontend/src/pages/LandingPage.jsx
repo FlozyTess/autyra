@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import Features from "../components/Features";
 import Footer from "../components/Footer";
-import "../styles/LandingPage.css";
+import "./LandingPage.css";
 
 function LandingPage() {
   return (
@@ -11,6 +11,7 @@ function LandingPage() {
        <Navbar />
        <Hero />
        <Features />
+       <Footer />
     </div>
   );
 }
